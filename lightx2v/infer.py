@@ -48,6 +48,6 @@ if __name__ == "__main__":
     with ProfilingContext("Total Cost"):
         config = set_config(args)
         print(f"config:\n{json.dumps(config, ensure_ascii=False, indent=4)}")
-        runner = init_runner(config)
+        runner = in_runner(config)
 
         runner.run_pipeline()
